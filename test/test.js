@@ -31,7 +31,8 @@ describe('#app', function () {
 
   describe('#app', function() {
     it('should create expected files', function (done) {
-      var expected = [
+
+     var expected = [
         'app/bower_components',
         ['bower.json', /"name": "temp"/],
         ['package.json', /"name": "temp"/],
@@ -54,7 +55,7 @@ describe('#app', function () {
 
       this.chromeapp.options['skip-install'] = true;
       this.chromeapp.run({}, function () {
-        helpers.assertFiles(expected);
+        helpers.assertFile(expected);
         done();
       });
     });
@@ -75,7 +76,7 @@ describe('#app', function () {
 
       this.chromeapp.options['skip-install'] = true;
       this.chromeapp.run({}, function () {
-        helpers.assertFiles(expected);
+        helpers.assertFile(expected);
         done();
       });
     });
