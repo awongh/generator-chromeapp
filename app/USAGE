@@ -1,8 +1,8 @@
 Description:
-    Create a chromeapp boilerplate generator that creates everything for you. Have fun.
+    Create an angular chromeapp boilerplate generator that creates everything for you. Have fun.
 
 Example:
-    yo chromeapp $NAME[OPTIONAL]
+    yo ngchromeapp $NAME[OPTIONAL]
 
     This will create:
         Gruntfile.js: Configuration for the task runner.
